@@ -271,7 +271,9 @@
     }
 
     function setUrl(url) {
-      document.getElementById('urlInput').value = url;
+      const input = document.getElementById('urlInput');
+      input.value = '';
+      input.value = url;
       document.getElementById('result').className = 'result';
     }
 
